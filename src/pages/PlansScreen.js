@@ -12,13 +12,13 @@ const PlansScreen = () => {
 
   useEffect(() => {
 
-    const q = query(collection(db, "products"),where('active','==', true));
-    const products = {};
-    const querySnapshot = getDocs(q);
+    //const q = query(collection(db, "products"),where('active','==', true));
+    //const products = {};
+    //const querySnapshot = getDocs(q);
     
 
 
-    /*db.collection('products')
+    db.collection('products')
     .where('active', '==', true)
     .get()
     .then((querySnapshot) => {
@@ -35,7 +35,7 @@ const PlansScreen = () => {
         });
       });
       setProducts(products);
-    });*/
+    });
   }, []);
 
   console.log(products);
